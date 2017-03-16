@@ -19,12 +19,10 @@
     * CSE with Client Side Master Key
   * S3 Static Web Hosting
     * S3 Supports redirects.
-  * S3 Cross Region Replication
-Object meta-data, ACL, object certificates.
   * S3 URL Format
-    * Static website hosting bucketName.s3-website-regionName.amazonaws.com
-# AWS IAM
-* Cross Account Authentication
+    * Static website hosting: bucketName.s3-website-regionName.amazonaws.com
+  * S3 Cross Region Replication
+    * Object meta-data, ACL, object certificates.
 # AWS EC2
 * EC2 Instance Types
 * EC2 Pricing Models
@@ -99,3 +97,5 @@ Names of availability zones are randomly applied for each account.
 * EC2 Reserved instances purchase limit: 20 instances / AZ / month.
 # AWS Best Practices
 * Create Roles instead of storing access keys.
+# AWS IAM
+* Cross Account Authentication
