@@ -1,29 +1,3 @@
-# AWS S3
-* S3 Storage Class
-  * S3 Standard
-  * S3 IA 
-  * S3 RRS
-  * Glacier
-* S3 Lifecycle Policies
-* MFA Delete
-* S3 Data Consistency Model
-* IPv6 Support
-* S3 Transfer Acceleration
-* S3 Multipart Uploads
-* Encryption
-  * SSE (Server Side Encryption)
-    * SSE-S3 (SSE with S3 Managed Master Key)
-    * SSE-KMS (SSE with AWS KMS Managed Master Key)
-    * SSE-C (SSE with Customer Managed Master Key)
-  * CSE (Client Side Encryption)
-    * CSE with AWS KMS Managed Customer Master key
-    * CSE with Client Side Master Key
-  * S3 Static Web Hosting
-    * S3 Supports redirects.
-  * S3 URL Format
-    * Static website hosting: bucketName.s3-website-regionName.amazonaws.com
-  * S3 Cross Region Replication
-    * Object meta-data, ACL, object certificates.
 # AWS EC2
 * EC2 Instance Types
 * EC2 Pricing Models
@@ -103,3 +77,29 @@ Names of availability zones are randomly applied for each account.
 # AWS Scaling
 * Automatic Time-based Scaling
 * Automatic Load-based Scaling
+# AWS S3
+* S3 Storage Class
+  * S3 Standard
+  * S3 IA 
+  * S3 RRS
+  * Glacier
+* S3 Lifecycle Policies
+* MFA Delete
+* S3 Data Consistency Model
+* IPv6 Support
+* S3 Transfer Acceleration
+* S3 Multipart Uploads
+* Encryption
+  * SSE (Server Side Encryption)
+    * SSE-S3 (SSE with S3 Managed Master Key)
+    * SSE-KMS (SSE with AWS KMS Managed Master Key)
+    * SSE-C (SSE with Customer Managed Master Key)
+  * CSE (Client Side Encryption)
+    * CSE with AWS KMS Managed Customer Master key
+    * CSE with Client Side Master Key
+  * S3 Static Web Hosting
+    * S3 Supports redirects.
+  * S3 URL Format
+    * Static website hosting: bucketName.s3-website-regionName.amazonaws.com
+  * S3 Cross Region Replication
+    * Object meta-data, ACL, object certificates.
