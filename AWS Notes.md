@@ -100,3 +100,6 @@ Names of availability zones are randomly applied for each account.
 * Create Roles instead of storing access keys.
 # AWS IAM
 * Cross Account Authentication
+# AWS Scaling
+* Automatic Time-based Scaling
+* Automatic Load-based Scaling
