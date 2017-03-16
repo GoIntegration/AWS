@@ -22,10 +22,11 @@
   * S3 Cross Region Replication
 Object meta-data, ACL, object certificates.
   * S3 URL Format
-    * static website hosting: bucketName.s3-website-regionName.amazonaws.com  
-# AWS IAM
+    * Static website hosting: bucketName.s3-website-regionName.amazonaws.com  
+    
+# AWS IAM  
 * Cross Account Authentication
-# AWS EC2
+# AWS EC2  
 * EC2 Instance Types
 * EC2 Pricing Models
   * On Demand Instances
