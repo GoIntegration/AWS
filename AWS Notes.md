@@ -75,7 +75,7 @@ Names of availability zones are randomly applied for each account.
 # AWS IAM
 * Cross Account Authentication
 # AWS Scaling
-* Automatic Time-based Scaling
+* Automatic Time-based Scaling (Cyclic Scaling)
 * Automatic Load-based Scaling
 # AWS S3
 * S3 Storage Class
