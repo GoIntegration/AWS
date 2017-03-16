@@ -6,6 +6,7 @@
   * Glacier
 * S3 Lifecycle Policies
 * MFA Delete
+* S3 Data Consistency Model
 * IPv6 Support
 * S3 Transfer Acceleration
 * S3 Multipart Uploads
