@@ -13,6 +13,7 @@
 * EBS (Elastic Block Storage)
   * EBS Snapshots
   * EBS Snapshots Replication via S3
+  * EBS Encryption
 * Elastic IPs
 * Cluster Placement Group
 * AWS EC2 Load Balancer
@@ -21,6 +22,8 @@
   * AWS EC2-VPC Load Balancer
   * Protocol Supported by ELB
 * AWS EC2 Auto Scaling
+  * Automatic Time-based Scaling (Cyclic Scaling)
+  * Automatic Load-based Scaling
 * Reserved Instance Marketplace
 # AWS VPC
 Names of availability zones are randomly applied for each account.
@@ -57,26 +60,10 @@ Names of availability zones are randomly applied for each account.
 # AWS Cloud Formation
 # Route 53
 * Supports domain registration
-# AWS Limits
-* S3 minimum file size is 0 Byte.
-* S3 maximum file size 5 TB.
-* All S3 durability eleven 9s except S3 RRS which is 99.99.
-* S3 availability, Standard – 99.99, IA – 99.90, Glacier – 99.00, S3 RRS – 99.99.
-* Max 5 Elastic IPs allowed in a Region.
-* Max 100 buckets allowed per account.
-* EC2 SLA – 99.95.
-* Cloud watch stores metrics for 2 weeks after deleting resources.
-* RDS by default minimum retention period – 1 day, maximum – 35 days.
-* Minimum SSD EBS volume size 1 GB.
-* AWS Cloudwatch minimum time interval granularity for the data that Cloudwatch receives and aggregates – 1 min.
-* EC2 Reserved instances purchase limit: 20 instances / AZ / month.
 # AWS Best Practices
 * Create Roles instead of storing access keys.
 # AWS IAM
 * Cross Account Authentication
-# AWS Scaling
-* Automatic Time-based Scaling (Cyclic Scaling)
-* Automatic Load-based Scaling
 # AWS S3
 * S3 Storage Class
   * S3 Standard
@@ -103,3 +90,21 @@ Names of availability zones are randomly applied for each account.
     * Static website hosting: bucketName.s3-website-regionName.amazonaws.com
   * S3 Cross Region Replication
     * Object meta-data, ACL, object certificates.
+    * Versioning Enabled at Source & Destination
+# AWS Limits
+* S3 minimum file size is 0 Byte.
+* S3 maximum file size 5 TB.
+* All S3 durability eleven 9s except S3 RRS which is 99.99.
+* S3 availability, Standard – 99.99, IA – 99.90, Glacier – 99.00, S3 RRS – 99.99.
+* Max 5 Elastic IPs allowed in a Region.
+* Max 100 buckets allowed per account.
+* EC2 SLA – 99.95.
+* Cloud watch stores metrics for 2 weeks after deleting resources.
+* RDS by default minimum retention period – 1 day, maximum – 35 days.
+* Minimum SSD EBS volume size 1 GB.
+* AWS Cloudwatch minimum time interval granularity for the data that Cloudwatch receives and aggregates – 1 min.
+* EC2 Reserved instances purchase limit: 20 instances / AZ / month.
+* Max #vmwares migrated concurrently : 50
+* Max size of general purpose ssd 16 : 16TiB
+* Free invalidation paths per month(to remove data from Edge Location) : 1000
+* The Root account has total access to all services.
