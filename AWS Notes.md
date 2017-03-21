@@ -1,3 +1,4 @@
+# AWS Welarchitectee Framework
 # AWS EC2
 * EC2 Instance Types
 * EC2 Pricing Models
@@ -25,6 +26,8 @@
   * Automatic Time-based Scaling (Cyclic Scaling)
   * Automatic Load-based Scaling
 * Reserved Instance Marketplace
+* EC2 Bastian Host
+* EC2 Launch Config
 # AWS VPC
 Names of availability zones are randomly applied for each account.
 # AWS Import/Export
