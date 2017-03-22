@@ -1,4 +1,4 @@
-# AWS Well Architected Framework
+# AWS Welarchitectee Framework
 # AWS EC2
 * EC2 Instance Types
 * EC2 Pricing Models
@@ -59,6 +59,20 @@ Names of availability zones are randomly applied for each account.
 * Memcached
 * Redis
 # AWS SQS
+* Supports both standard and FIFO queues
+* Usage
+  * Decoupling the components of an application
+  * Configuring individual message delay
+  * Dynamically increasing concurrency & througuput at read time
+  * Scalling transparently
+* Main Features of SQS
+  * Redundant Infrastructure
+  * Multiple producers and consumers
+  * Configurable settings per queue
+  * Variable Message Size
+  * Access Control
+  * Delay Queues
+  * PCI Compliance
 # AWS SWF
 # AWS Cloud Formation
 # Route 53
@@ -111,3 +125,4 @@ Names of availability zones are randomly applied for each account.
 * Max size of general purpose ssd 16 : 16TiB
 * Free invalidation paths per month(to remove data from Edge Location) : 1000
 * The Root account has total access to all services.
+* SQS Message Size <= 256KB
