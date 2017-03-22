@@ -1,4 +1,4 @@
-# AWS Welarchitectee Framework
+# AWS Well Architected Framework
 # AWS EC2
 * EC2 Instance Types
 * EC2 Pricing Models
