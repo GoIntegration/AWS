@@ -1,4 +1,4 @@
-# AWS Welarchitectee Framework
+# AWS Well Architected Framework
 # AWS EC2
 * EC2 Instance Types
 * EC2 Pricing Models
@@ -126,3 +126,23 @@ Names of availability zones are randomly applied for each account.
 * Free invalidation paths per month(to remove data from Edge Location) : 1000
 * The Root account has total access to all services.
 * SQS Message Size <= 256KB
+* SQS Queue Name : 80 Char Limit
+* SQS Default Visibility Timeout : 30 Seconds
+* SQS Min Visibility Timeout : 0 Seconds
+* SQS Max Visibility Timeout : 12 hours
+* SQS Default Message Retention Period : 4 days
+* SQS Min Message Retention Period : 1 min
+* SQS Max Message Retention Period : 14 days
+* SQS Min Delivery Delay : 0 Seconds
+* SQS Max Delivery Delay : 15 mins
+* SQS Min Receive Message Wait Time : 0 Seconds
+* SQS Max Receive Message Wait Time : 20 Seconds
+* SQS FIFO Queue Transaction Limit : 300 tx/second
+* SQS FIFO Queue Naming Convention : must end with ".fifo"
+* SQS FIFO does not support timers on individual messages
+* SQS FIFO In flight messages storage limit : 120,000
+* SQS Max Lenghth Message ID : 100 chars
+* SQS Max Lenghth Receipt Handle ID : 1024 chars
+* SQS Deadletter queue must reside in the same region than that of original queue
+* SQS Queue Names and URLs are case sensitive
+* 
