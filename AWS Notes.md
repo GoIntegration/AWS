@@ -1,4 +1,8 @@
 # AWS Well Architected Framework
+* Security
+* Performance
+* Reliability
+* Cost Optimized
 # AWS EC2
 * EC2 Instance Types
 * EC2 Pricing Models
@@ -125,7 +129,7 @@ Names of availability zones are randomly applied for each account.
 * Max size of general purpose ssd 16 : 16TiB
 * Free invalidation paths per month(to remove data from Edge Location) : 1000
 * The Root account has total access to all services.
-* SQS Message Size <= 256KB
+* 1 KB <= SQS Message Size <= 256KB
 * SQS Queue Name : 80 Char Limit
 * SQS Default Visibility Timeout : 30 Seconds
 * SQS Min Visibility Timeout : 0 Seconds
@@ -145,4 +149,5 @@ Names of availability zones are randomly applied for each account.
 * SQS Max Lenghth Receipt Handle ID : 1024 chars
 * SQS Deadletter queue must reside in the same region than that of original queue
 * SQS Queue Names and URLs are case sensitive
+* S3 size to support the SQS message : 2 GB
 * 
