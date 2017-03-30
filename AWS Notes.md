@@ -150,4 +150,7 @@ Names of availability zones are randomly applied for each account.
 * SQS Deadletter queue must reside in the same region than that of original queue
 * SQS Queue Names and URLs are case sensitive
 * S3 size to support the SQS message : 2 GB
-* 
+* S3 bucket name cannot be changed post bucket creation
+* S3 Bucket Name 3 <= name <= 63
+* S3 Bucket Name must not be formatted as IP Addresses
+* S3 Naming converntion, start & end with Letter/number. Can contain period & dash
