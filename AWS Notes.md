@@ -10,6 +10,7 @@
   * Spot Instances
   * Reserved Instances
   * Dedicated Host
+* Reserved instance cannot be migrated across AZs
 * Types of Virtualization
   * PV (Para Virtual)
   * HV (Hardware Virtual)
