@@ -113,44 +113,45 @@ Names of availability zones are randomly applied for each account.
     * Object meta-data, ACL, object certificates.
     * Versioning Enabled at Source & Destination
 # AWS Limits
-* S3 minimum file size is 0 Byte.
-* S3 maximum file size 5 TB.
-* All S3 durability eleven 9s except S3 RRS which is 99.99.
-* S3 availability, Standard – 99.99, IA – 99.90, Glacier – 99.00, S3 RRS – 99.99.
-* Max 5 Elastic IPs allowed in a Region.
-* Max 100 buckets allowed per account.
-* EC2 SLA – 99.95.
-* Cloud watch stores metrics for 2 weeks after deleting resources.
-* RDS by default minimum retention period – 1 day, maximum – 35 days.
-* Minimum SSD EBS volume size 1 GB.
-* AWS Cloudwatch minimum time interval granularity for the data that Cloudwatch receives and aggregates – 1 min.
+* CloudFront Free invalidation paths per month(to remove data from Edge Location) : 1000
+* CloudWatch minimum time interval granularity for the data that Cloudwatch receives and aggregates – 1 min.
+* CloudWatch stores metrics for 2 weeks after deleting resources.
+* EBS General-purpose SSD volume maximum size 16 TB. 
+* EBS Max size of general purpose ssd 16 : 16TiB
+* EBS SSD EBS Minimum volume size 1 GB.
 * EC2 Reserved instances purchase limit: 20 instances / AZ / month.
-* Max #vmwares migrated concurrently : 50
-* Max size of general purpose ssd 16 : 16TiB
-* Free invalidation paths per month(to remove data from Edge Location) : 1000
-* The Root account has total access to all services.
-* 1 KB <= SQS Message Size <= 256KB
-* SQS Queue Name : 80 Char Limit
-* SQS Default Visibility Timeout : 30 Seconds
-* SQS Min Visibility Timeout : 0 Seconds
-* SQS Max Visibility Timeout : 12 hours
+* EC2 SLA – 99.95.
+* Elastic IPs Max 5 allowed in a Region.
+* RDS by default minimum retention period – 1 day, maximum – 35 days.
+* S3 availability, Standard – 99.99, IA – 99.90, Glacier – 99.00, S3 RRS – 99.99.
+* S3 Bucket Name 3 <= name <= 63
+* S3 bucket name cannot be changed post bucket creation
+* S3 Bucket Name must not be formatted as IP Addresses
+* S3 durability eleven 9s for all except S3 RRS which is 99.99.
+* S3 Max 100 buckets allowed per account.
+* S3 maximum file size 5 TB.
+* S3 minimum file size is 0 Byte.
+* S3 Naming converntion, start & end with Letter/number. Can contain period & dash
+* S3 size to support the SQS message : 2 GB
+* SQS 1 KB <= SQS Message Size <= 256KB
+* SQS Deadletter queue must reside in the same region than that of original queue
 * SQS Default Message Retention Period : 4 days
-* SQS Min Message Retention Period : 1 min
-* SQS Max Message Retention Period : 14 days
-* SQS Min Delivery Delay : 0 Seconds
-* SQS Max Delivery Delay : 15 mins
-* SQS Min Receive Message Wait Time : 0 Seconds
-* SQS Max Receive Message Wait Time : 20 Seconds
-* SQS FIFO Queue Transaction Limit : 300 tx/second
-* SQS FIFO Queue Naming Convention : must end with ".fifo"
+* SQS Default Visibility Timeout : 30 Seconds
 * SQS FIFO does not support timers on individual messages
 * SQS FIFO In flight messages storage limit : 120,000
+* SQS FIFO Queue Naming Convention : must end with ".fifo"
+* SQS FIFO Queue Transaction Limit : 300 tx/second
+* SQS Max Delivery Delay : 15 mins
 * SQS Max Lenghth Message ID : 100 chars
 * SQS Max Lenghth Receipt Handle ID : 1024 chars
-* SQS Deadletter queue must reside in the same region than that of original queue
+* SQS Max Message Retention Period : 14 days
+* SQS Max Receive Message Wait Time : 20 Seconds
+* SQS Max Visibility Timeout : 12 hours
+* SQS Min Delivery Delay : 0 Seconds
+* SQS Min Message Retention Period : 1 min
+* SQS Min Receive Message Wait Time : 0 Seconds
+* SQS Min Visibility Timeout : 0 Seconds
+* SQS Queue Name : 80 Char Limit
 * SQS Queue Names and URLs are case sensitive
-* S3 size to support the SQS message : 2 GB
-* S3 bucket name cannot be changed post bucket creation
-* S3 Bucket Name 3 <= name <= 63
-* S3 Bucket Name must not be formatted as IP Addresses
-* S3 Naming converntion, start & end with Letter/number. Can contain period & dash
+* The Root account has total access to all services.
+* VM Import Export Max #vmwares migrated concurrently : 50 (New documentation says 20)
